@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.userController">
+   <children>
+      <Button fx:id="createButton" layoutX="207.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Create" />
+      <Button fx:id="deleteButton" layoutX="207.0" layoutY="161.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Delete" />
+      <Button fx:id="renameButton" layoutX="207.0" layoutY="56.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Rename" />
+      <Button fx:id="openButton" layoutX="207.0" layoutY="116.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Open" />
+      <TextField fx:id="newAlbumInput" layoutX="282.0" layoutY="24.0" prefHeight="25.0" prefWidth="109.0" promptText="New Album Name" />
+      <TextField fx:id="newNameInput" layoutX="282.0" layoutY="56.0" prefHeight="25.0" prefWidth="109.0" promptText="New Name" />
+      <Text layoutX="217.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Open or Delete Selected" wrappingWidth="171.0" />
+      <Button fx:id="logoutButton" layoutX="207.0" layoutY="203.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Logout" />
+      <AnchorPane layoutX="12.0" layoutY="28.0" prefHeight="169.0" prefWidth="183.0">
+         <children>
+            <ListView fx:id="albumList" prefHeight="200.0" prefWidth="183.0" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="7.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Albums" wrappingWidth="42.13671875" />
+      <AnchorPane layoutX="13.0" layoutY="239.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="375.0">
+         <children>
+            <ListView fx:id="albumInfo" layoutY="1.0" prefHeight="68.0" prefWidth="375.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="exitButton" layoutX="346.0" layoutY="203.0" mnemonicParsing="false" text="Exit" />
+   </children>
+</Pane>
